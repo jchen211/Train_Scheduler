@@ -1,0 +1,8 @@
+body {
+    font-family: 'Rubik', Helvetica, sans-serif;
+    max-width: 960ps;
+    box-sizing: border-box;
+    margin: 50px auto;
+    color: #7F2982;
+    text-align: center;
+}

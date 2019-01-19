@@ -7,13 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
 </head>
 <body>
 
+    <header>Train Schedule</header>
 
-<!-- jQuery -->
+    <div class='container'>
+        <div class='row' id='trainSched'>train schedule</div>
+
+        <div class='row' id='addTrain'>
+            <label for='trainName'></label>
+                <input type='text' name='tname' id='trainName'><br>
+            
+            <label for='trainDest'></label>
+                <input type='text' name='dest' id='trainDest'><br>
+            
+            <label for='frstTime'></label>
+                <input type='text' name='first' id='frstTime'><br>
+            
+            <label for='frequency'></label>
+                <input type='text' name='freq' id='frequency'><br>
+           
+            <input type='submit' value='submit'>
+        </div>
+    </div>
+
+<!-- jQuery --></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
 <!--javascript link-->
 <script src="assets/js/app.js"></script>
 </body>
