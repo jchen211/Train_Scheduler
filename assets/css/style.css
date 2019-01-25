@@ -1,8 +1,24 @@
 body {
     font-family: 'Rubik', Helvetica, sans-serif;
-    max-width: 960ps;
+    max-width: 960px;
     box-sizing: border-box;
     margin: 50px auto;
     color: #7F2982;
-    text-align: center;
 }
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    border: 1px solid #323232;
+    height: 300px;
+
+}
+
+.row {
+    display: block;
+}
+
+input {
+    overflow: auto;
+}
+
