@@ -55,9 +55,10 @@ database.ref().on("child_added", function(childSnapshot) {
   
     var nxtArrival = moment.unix(fTrainTime, "HH:mm").format("HH:mm");
 
-    var minAway = moment(fTrainTime, "X").diff(moment(), "minutes");
+    var minMoment = moment(fTrainTime, "X");
+
+    var minAway = minMoment.diff(moment(), "minutes");
   
-    // Create the new row
     var newRow = $("<tr>").append(
       $("<td>").text(trainName),
       $("<td>").text(trainDest),
@@ -66,7 +67,6 @@ database.ref().on("child_added", function(childSnapshot) {
       $("<td>").text(minAway),
     );
   
-    // Append the new row to the table
     $("#trainTable > tbody").append(newRow);
   });
   
